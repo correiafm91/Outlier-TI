@@ -10,7 +10,7 @@ const services = [
   },
   {
     icon: Code,
-    title: "Automação de Processos",
+    title: "Ferramentas para automatizar processos",
     description: "Elimine tarefas repetitivas e aumente produtividade com automação inteligente.",
   },
   {
@@ -25,7 +25,7 @@ const services = [
   },
   {
     icon: Cog,
-    title: "Integração de Sistemas",
+    title: "Infraestrutura",
     description: "Conecte todas suas ferramentas em um ecossistema único e eficiente.",
   },
   {

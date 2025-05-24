@@ -13,7 +13,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto text-balance">
-            Agende uma consultoria gratuita e descubra como podemos acelerar 
+            Agende um diagnóstico gratuito e descubra como podemos acelerar 
             seus resultados em 90 dias.
           </p>
           
@@ -22,7 +22,7 @@ const CTA = () => {
               size="lg" 
               className="bg-white text-black hover:bg-white/90 text-xl px-12 py-6 h-auto"
             >
-              Agendar Consultoria Gratuita
+              Diagnóstico gratuito
               <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
           </div>

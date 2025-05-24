@@ -4,8 +4,8 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,8 +16,8 @@ const Index = () => {
       <Services />
       <Results />
       <Testimonials />
-      <FAQ />
       <CTA />
+      <FAQ />
       <Footer />
     </div>
   );

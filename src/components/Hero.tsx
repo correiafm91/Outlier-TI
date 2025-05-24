@@ -22,7 +22,7 @@ const Hero = () => {
               size="lg" 
               className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"
             >
-              Agendar Consultoria Gratuita
+              Diagnóstico gratuito
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             
@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-white/60">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4" />
-              <span>Consultoria sem compromisso</span>
+              <span>Sem compromisso</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4" />
