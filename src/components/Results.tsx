@@ -35,14 +35,14 @@ const Results = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">300%</div>
-              <div className="text-white/70">Aumento de Produtividade</div>
+              <div className="text-4xl font-bold text-white mb-2">34</div>
+              <div className="text-white/70">Negócios Otimizados</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">R$ 2.5M</div>
+              <div className="text-4xl font-bold text-white mb-2">R$ 774K</div>
               <div className="text-white/70">Economia Gerada</div>
             </CardContent>
           </Card>

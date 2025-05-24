@@ -24,12 +24,12 @@ const faqs = [
     answer: "Sim, oferecemos suporte contínuo e treinamento para sua equipe. Também fazemos revisões trimestrais para identificar novas oportunidades de otimização e crescimento.",
   },
   {
-    question: "Como funciona a consultoria inicial gratuita?",
-    answer: "É uma análise completa de 60-90 minutos onde mapeamos seus principais desafios, identificamos oportunidades de melhoria e criamos um plano de ação personalizado. Sem compromisso, sem pegadinhas.",
+    question: "Como funciona o diagnóstico inicial gratuito?",
+    answer: "É uma análise completa de 24 horas onde analisamos seu negócio e mapeamos seus principais desafios, identificamos oportunidades de melhoria e criamos um plano de ação personalizado. Sem compromisso, sem pegadinhas.",
   },
   {
     question: "Qual o investimento necessário?",
-    answer: "O investimento varia conforme o escopo do projeto, mas nossa média de ROI é de 400% no primeiro ano. Oferecemos opções flexíveis de pagamento e modelos de resultado compartilhado.",
+    answer: "O investimento varia conforme o escopo do projeto. Oferecemos opções flexíveis de pagamento e modelos de resultado compartilhado baseados nos resultados alcançados.",
   },
 ];
 
