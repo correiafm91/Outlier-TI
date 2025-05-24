@@ -12,22 +12,16 @@ const About = () => {
               </h2>
               
               <p className="text-xl text-white/70 mb-6 leading-relaxed">
-                Com mais de 10 anos transformando negócios através da tecnologia, 
-                já ajudei dezenas de empresas a otimizar seus processos, reduzir custos 
+                Com mais de 5 anos transformando negócios através da tecnologia, 
+                ele já ajudou dezenas de empresas a otimizar seus processos, reduzir custos 
                 e acelerar o crescimento.
               </p>
               
               <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                Minha abordagem é simples: entender profundamente seu negócio, 
+                Sua abordagem é simples: entender profundamente o negócio do cliente, 
                 identificar as oportunidades reais de melhoria e implementar 
                 soluções que geram resultados mensuráveis em prazo determinado.
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 text-sm text-white/50">
-                <div>✓ Especialista em transformação digital</div>
-                <div>✓ ROI comprovado em 90 dias</div>
-                <div>✓ Mais de 34 negócios otimizados</div>
-              </div>
             </div>
             
             <div className="text-center">
