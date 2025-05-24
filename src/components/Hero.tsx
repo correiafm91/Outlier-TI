@@ -17,21 +17,13 @@ const Hero = () => {
             e aumentam a produtividade em 3x. Sem complexidade. Só resultados.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex justify-center mb-12">
             <Button 
               size="lg" 
               className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"
             >
               Diagnóstico gratuito
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-4 h-auto"
-            >
-              Ver Estudos de Caso
             </Button>
           </div>
           

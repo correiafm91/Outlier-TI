@@ -12,6 +12,10 @@ const faqs = [
     answer: "Nossos clientes começam a ver resultados tangíveis entre 30-60 dias após o início da implementação. Oferecemos marcos semanais para acompanhar o progresso e garantir que as metas sejam alcançadas no prazo.",
   },
   {
+    question: "Qual o tempo de implementação da consultoria?",
+    answer: "O processo completo de implementação de tecnologias leva de 3 a 4 semanas, incluindo treinamentos para sua equipe. Esse prazo garante uma transição suave e eficiente para as novas soluções.",
+  },
+  {
     question: "Como vocês garantem o ROI prometido?",
     answer: "Estabelecemos KPIs claros desde o início e monitoramos constantemente. Se não atingirmos as métricas acordadas em 90 dias, trabalhamos sem custo adicional até alcançar os resultados prometidos.",
   },
