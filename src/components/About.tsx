@@ -26,13 +26,10 @@ const About = () => {
             
             <div className="text-center">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Gustavo Correia - Especialista em Cibersegurança
-                </h3>
                 <div className="inline-block">
                   <img 
                     src="https://i.postimg.cc/xjprD9Fc/491493619-913055980850280-3057480393520500498-n-1.jpg"
-                    alt="Gustavo Correia - Especialista em Cibersegurança"
+                    alt="Especialista em Cibersegurança"
                     className="w-80 h-80 object-cover rounded-lg mx-auto border border-white/10"
                   />
                 </div>

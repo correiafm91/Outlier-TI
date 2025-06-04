@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-black">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance leading-tight">
             Proteja Sua Empresa de
             <span className="block text-white/90">Ataques Cibernéticos</span>
           </h1>
@@ -18,13 +18,15 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"
-            >
-              Auditoria gratuita
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="https://www.instagram.com/ocybernetico_/" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"
+              >
+                Auditoria gratuita
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
           
           <div className="flex flex-wrap justify-center gap-8 text-sm text-white/60">
