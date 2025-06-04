@@ -1,37 +1,37 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Cloud, Shield, BarChart3, Cog, Zap } from "lucide-react";
+import { Shield, ShieldCheck, Eye, Lock, AlertTriangle, Network } from "lucide-react";
 
 const services = [
   {
-    icon: Cloud,
-    title: "Migração para Cloud",
-    description: "Reduza custos de infraestrutura em até 60% com migração estratégica para nuvem.",
-  },
-  {
-    icon: Code,
-    title: "Ferramentas para automatizar processos",
-    description: "Elimine tarefas repetitivas e aumente produtividade com automação inteligente.",
-  },
-  {
-    icon: BarChart3,
-    title: "Business Intelligence",
-    description: "Tome decisões baseadas em dados com dashboards e análises avançadas.",
-  },
-  {
     icon: Shield,
-    title: "Segurança Digital",
-    description: "Proteja seu negócio com soluções de segurança robustas e compliance.",
+    title: "Firewall Avançado",
+    description: "Proteção perimetral inteligente que bloqueia 99.9% das tentativas de invasão.",
   },
   {
-    icon: Cog,
-    title: "Infraestrutura",
-    description: "Conecte todas suas ferramentas em um ecossistema único e eficiente.",
+    icon: ShieldCheck,
+    title: "Monitoramento 24/7",
+    description: "Detecção e resposta em tempo real a ameaças e atividades suspeitas.",
   },
   {
-    icon: Zap,
-    title: "Otimização de Performance",
-    description: "Acelere seus sistemas e processos para máxima eficiência operacional.",
+    icon: Eye,
+    title: "Análise de Vulnerabilidades",
+    description: "Identificação proativa de falhas de segurança antes que sejam exploradas.",
+  },
+  {
+    icon: Lock,
+    title: "Criptografia Empresarial",
+    description: "Proteção de dados sensíveis com criptografia de nível militar.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Resposta a Incidentes",
+    description: "Equipe especializada para contenção e recuperação rápida de ataques.",
+  },
+  {
+    icon: Network,
+    title: "Segurança de Rede",
+    description: "Proteção completa da infraestrutura e endpoints da sua empresa.",
   },
 ];
 
@@ -41,11 +41,11 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Soluções que Geram
-            <span className="block text-white/90">Resultados Reais</span>
+            Soluções Completas de
+            <span className="block text-white/90">Cibersegurança</span>
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Cada implementação é planejada para impactar diretamente seus resultados financeiros
+            Proteja sua empresa com tecnologias de ponta e expertise especializada
           </p>
         </div>
         

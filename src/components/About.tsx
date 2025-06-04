@@ -7,32 +7,32 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                Quem está por trás
-                <span className="block text-white/90">dos resultados</span>
+                Especialista em
+                <span className="block text-white/90">Cibersegurança</span>
               </h2>
               
               <p className="text-xl text-white/70 mb-6 leading-relaxed">
-                Com mais de 5 anos transformando negócios através da tecnologia, 
-                ele já ajudou dezenas de empresas a otimizar seus processos, reduzir custos 
-                e acelerar o crescimento.
+                Com mais de 5 anos protegendo empresas contra ataques cibernéticos, 
+                ele já blindou centenas de organizações contra ransomware, phishing 
+                e invasões de dados.
               </p>
               
               <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                Sua abordagem é simples: entender profundamente o negócio do cliente, 
-                identificar as oportunidades reais de melhoria e implementar 
-                soluções que geram resultados mensuráveis em prazo determinado.
+                Sua metodologia combina tecnologia de ponta com análise comportamental 
+                para criar camadas de proteção que se adaptam às novas ameaças 
+                em tempo real.
               </p>
             </div>
             
             <div className="text-center">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Gustavo Correia - Consultor de TI
+                  Gustavo Correia - Especialista em Cibersegurança
                 </h3>
                 <div className="inline-block">
                   <img 
                     src="https://i.postimg.cc/xjprD9Fc/491493619-913055980850280-3057480393520500498-n-1.jpg"
-                    alt="Gustavo Correia - Consultor de TI"
+                    alt="Gustavo Correia - Especialista em Cibersegurança"
                     className="w-80 h-80 object-cover rounded-lg mx-auto border border-white/10"
                   />
                 </div>

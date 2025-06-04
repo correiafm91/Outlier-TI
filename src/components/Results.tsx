@@ -2,20 +2,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-const performanceData = [
-  { month: 'Jan', before: 100, after: 180 },
-  { month: 'Feb', before: 105, after: 220 },
-  { month: 'Mar', before: 98, after: 280 },
-  { month: 'Apr', before: 110, after: 320 },
-  { month: 'May', before: 108, after: 380 },
-  { month: 'Jun', before: 115, after: 420 },
+const threatData = [
+  { month: 'Jan', threats: 450, blocked: 449 },
+  { month: 'Feb', threats: 520, blocked: 518 },
+  { month: 'Mar', threats: 680, blocked: 679 },
+  { month: 'Apr', threats: 590, blocked: 589 },
+  { month: 'May', threats: 720, blocked: 719 },
+  { month: 'Jun', threats: 650, blocked: 649 },
 ];
 
-const costData = [
-  { category: 'Infraestrutura', reduction: 45 },
-  { category: 'Processos Manuais', reduction: 65 },
-  { category: 'Licenças', reduction: 30 },
-  { category: 'Manutenção', reduction: 55 },
+const incidentData = [
+  { category: 'Malware', reduction: 98 },
+  { category: 'Phishing', reduction: 95 },
+  { category: 'Ransomware', reduction: 100 },
+  { category: 'Intrusão', reduction: 97 },
 ];
 
 const Results = () => {
@@ -24,40 +24,40 @@ const Results = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Resultados Comprovados
+            Proteção Comprovada
             <span className="block text-white/90">em Números</span>
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Dados reais de clientes que transformaram seus negócios
+            Dados reais de empresas protegidas contra ameaças cibernéticas
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">34</div>
-              <div className="text-white/70">Negócios Otimizados</div>
+              <div className="text-4xl font-bold text-white mb-2">127</div>
+              <div className="text-white/70">Empresas Protegidas</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">R$ 774K</div>
-              <div className="text-white/70">Economia Gerada</div>
+              <div className="text-4xl font-bold text-white mb-2">99.8%</div>
+              <div className="text-white/70">Ameaças Bloqueadas</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">45%</div>
-              <div className="text-white/70">Redução de Custos</div>
+              <div className="text-4xl font-bold text-white mb-2">0</div>
+              <div className="text-white/70">Vazamentos de Dados</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">90%</div>
-              <div className="text-white/70">Clientes Satisfeitos</div>
+              <div className="text-4xl font-bold text-white mb-2">24/7</div>
+              <div className="text-white/70">Monitoramento Ativo</div>
             </CardContent>
           </Card>
         </div>
@@ -65,11 +65,11 @@ const Results = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card className="bg-white/5 border-white/10">
             <CardHeader>
-              <CardTitle className="text-white">Performance Antes vs Depois</CardTitle>
+              <CardTitle className="text-white">Ameaças Detectadas vs Bloqueadas</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
-                <AreaChart data={performanceData}>
+                <AreaChart data={threatData}>
                   <XAxis 
                     dataKey="month" 
                     axisLine={false} 
@@ -83,18 +83,18 @@ const Results = () => {
                   />
                   <Area 
                     type="monotone" 
-                    dataKey="before" 
+                    dataKey="threats" 
                     stackId="1"
-                    stroke="#666" 
-                    fill="#333"
+                    stroke="#ff6b6b" 
+                    fill="#ff6b6b"
                     fillOpacity={0.6}
                   />
                   <Area 
                     type="monotone" 
-                    dataKey="after" 
+                    dataKey="blocked" 
                     stackId="2"
-                    stroke="#ffffff" 
-                    fill="#ffffff"
+                    stroke="#51cf66" 
+                    fill="#51cf66"
                     fillOpacity={0.8}
                   />
                 </AreaChart>
@@ -104,16 +104,17 @@ const Results = () => {
 
           <Card className="bg-white/5 border-white/10">
             <CardHeader>
-              <CardTitle className="text-white">Redução de Custos por Área</CardTitle>
+              <CardTitle className="text-white">Taxa de Proteção por Tipo de Ameaça</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={costData} layout="horizontal">
+                <BarChart data={incidentData} layout="horizontal">
                   <XAxis 
                     type="number"
                     axisLine={false} 
                     tickLine={false}
                     tick={{ fill: '#ffffff', fontSize: 12 }}
+                    domain={[0, 100]}
                   />
                   <YAxis 
                     type="category"
@@ -125,7 +126,7 @@ const Results = () => {
                   />
                   <Bar 
                     dataKey="reduction" 
-                    fill="#ffffff"
+                    fill="#51cf66"
                     radius={[0, 4, 4, 0]}
                   />
                 </BarChart>

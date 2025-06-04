@@ -5,12 +5,12 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <div className="text-2xl font-bold text-white mb-4">
-            Consultoria de TI
+            CyberDefense Pro
           </div>
           
           <div className="border-t border-white/10 pt-8">
             <p className="text-white/40 text-sm">
-              © 2024 Consultoria de TI. Todos os direitos reservados.
+              © 2024 CyberDefense Pro. Todos os direitos reservados.
             </p>
           </div>
         </div>

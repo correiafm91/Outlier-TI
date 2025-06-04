@@ -8,32 +8,32 @@ import {
 
 const faqs = [
   {
-    question: "Quanto tempo leva para ver resultados?",
-    answer: "Nossos clientes começam a ver resultados tangíveis entre 30-60 dias após o início da implementação. Oferecemos marcos semanais para acompanhar o progresso e garantir que as metas sejam alcançadas no prazo.",
-  },
-  {
-    question: "Qual o tempo de implementação da consultoria?",
-    answer: "O processo completo de implementação de tecnologias leva de 3 a 4 semanas, incluindo treinamentos para sua equipe. Esse prazo garante uma transição suave e eficiente para as novas soluções.",
-  },
-  {
-    question: "Como vocês garantem o ROI prometido?",
-    answer: "Estabelecemos KPIs claros desde o início e monitoramos constantemente. Se não atingirmos as métricas acordadas em 90 dias, trabalhamos sem custo adicional até alcançar os resultados prometidos.",
-  },
-  {
-    question: "Quais tecnologias vocês implementam?",
-    answer: "Trabalhamos com as principais plataformas do mercado: AWS, Azure, Google Cloud, Microsoft 365, Salesforce, SAP, e desenvolvemos soluções customizadas quando necessário. Nossa escolha sempre se baseia no que gera mais valor para seu negócio.",
-  },
-  {
-    question: "Vocês oferecem suporte após a implementação?",
-    answer: "Sim, oferecemos suporte contínuo e treinamento para sua equipe. Também fazemos revisões trimestrais para identificar novas oportunidades de otimização e crescimento.",
+    question: "Quanto tempo leva para implementar a proteção completa?",
+    answer: "A implementação completa das soluções de cibersegurança leva de 3 a 4 semanas, incluindo configuração dos sistemas, treinamentos para sua equipe e testes de penetração. Esse prazo garante uma proteção robusta e eficiente.",
   },
   {
     question: "Como funciona o diagnóstico inicial gratuito?",
-    answer: "É uma análise completa de 24 horas onde analisamos seu negócio e mapeamos seus principais desafios, identificamos oportunidades de melhoria e criamos um plano de ação personalizado. Sem compromisso, sem pegadinhas.",
+    answer: "É uma auditoria completa de segurança que dura 24 horas onde analisamos toda sua infraestrutura digital, identificamos vulnerabilidades críticas e mapeamos possíveis vetores de ataque. Você recebe um relatório detalhado sem compromisso.",
   },
   {
-    question: "Qual o investimento necessário?",
-    answer: "O investimento varia conforme o escopo do projeto. Oferecemos opções flexíveis de pagamento e modelos de resultado compartilhado baseados nos resultados alcançados.",
+    question: "Vocês garantem proteção contra todos os tipos de ataques?",
+    answer: "Oferecemos proteção multicamadas contra 99.8% das ameaças conhecidas, incluindo ransomware, phishing, malware e ataques DDoS. Monitoramento 24/7 com resposta imediata a novas ameaças.",
+  },
+  {
+    question: "Quais tecnologias de segurança vocês utilizam?",
+    answer: "Utilizamos as melhores soluções do mercado: firewalls de próxima geração, sistemas de detecção e resposta (EDR), análise comportamental com IA, criptografia avançada e ferramentas de threat intelligence em tempo real.",
+  },
+  {
+    question: "Como funciona o monitoramento 24/7?",
+    answer: "Nossa central de operações de segurança (SOC) monitora sua rede ininterruptamente, com analistas especializados que respondem a incidentes em tempo real e podem conter ameaças antes que causem danos.",
+  },
+  {
+    question: "Vocês ajudam com compliance e regulamentações?",
+    answer: "Sim, garantimos conformidade com LGPD, ISO 27001, PCI DSS e outras regulamentações relevantes para seu setor. Fornecemos toda documentação necessária para auditorias e certificações.",
+  },
+  {
+    question: "Qual o investimento necessário para proteção empresarial?",
+    answer: "O investimento varia conforme o porte da empresa e nível de proteção necessário. Oferecemos planos escaláveis e modelos de pagamento flexíveis baseados no valor protegido e complexidade da infraestrutura.",
   },
 ];
 
@@ -47,7 +47,7 @@ const FAQ = () => {
             <span className="block text-white/90">Frequentes</span>
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Esclarecemos suas principais dúvidas
+            Esclarecemos suas principais dúvidas sobre cibersegurança
           </p>
         </div>
 

@@ -4,24 +4,24 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    position: "CEO, TechStart",
-    company: "Startup de Fintech",
-    content: "A consultoria transformou nossa operação. Reduzimos custos em 40% e aumentamos nossa capacidade de processamento em 5x. ROI foi alcançado em apenas 2 meses.",
+    name: "Marina Santos",
+    position: "CTO, FinanceSecure",
+    company: "Fintech",
+    content: "Desde a implementação da solução de cibersegurança, não tivemos nenhum incidente. A proteção 24/7 nos dá total tranquilidade para focar no crescimento.",
+    rating: 5,
+  },
+  {
+    name: "Roberto Lima",
+    position: "CISO, MedData",
+    company: "Healthtech",
+    content: "A auditoria revelou vulnerabilidades críticas que nem sabíamos que existiam. A resposta rápida da equipe evitou um possível vazamento de dados de pacientes.",
     rating: 5,
   },
   {
     name: "Ana Rodrigues",
-    position: "CTO, LogiFlow",
-    company: "E-commerce B2B",
-    content: "Implementação impecável. A automação dos nossos processos nos permitiu focar no que realmente importa: crescer o negócio. Recomendo sem hesitar.",
-    rating: 5,
-  },
-  {
-    name: "Roberto Mendes",
-    position: "Diretor de TI, ManufacPro",
-    company: "Indústria 4.0",
-    content: "Nunca vi uma consultoria tão focada em resultados. Cada solução proposta veio com métricas claras e prazos definidos. Superaram todas as expectativas.",
+    position: "Diretora de TI, LogiCorp",
+    company: "E-commerce",
+    content: "Excelente retorno sobre investimento. O que gastamos em segurança é muito menor do que teríamos perdido em um único ataque bem-sucedido.",
     rating: 5,
   },
 ];
@@ -32,11 +32,11 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            O que Dizem Nossos
-            <span className="block text-white/90">Clientes</span>
+            Empresas que Confiam
+            <span className="block text-white/90">em Nossa Proteção</span>
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Resultados que falam por si só
+            Segurança que gera confiança e resultados
           </p>
         </div>
 

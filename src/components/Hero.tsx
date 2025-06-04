@@ -8,13 +8,13 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight">
-            Transforme Seu Negócio com
-            <span className="block text-white/90">Tecnologia Estratégica</span>
+            Proteja Sua Empresa de
+            <span className="block text-white/90">Ataques Cibernéticos</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto text-balance">
-            Implementamos soluções tecnológicas que reduzem custos em até 40% 
-            e aumentam a produtividade em 3x. Sem complexidade. Só resultados.
+            Soluções completas de cibersegurança que reduzem riscos em até 95% 
+            e protegem seus dados críticos 24/7. Defesa ativa contra ameaças.
           </p>
           
           <div className="flex justify-center mb-12">
@@ -22,7 +22,7 @@ const Hero = () => {
               size="lg" 
               className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"
             >
-              Diagnóstico gratuito
+              Auditoria gratuita
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -30,15 +30,15 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-white/60">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4" />
-              <span>Sem compromisso</span>
+              <span>Análise completa de vulnerabilidades</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4" />
-              <span>ROI garantido em 90 dias</span>
+              <span>Proteção 24/7 garantida</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4" />
-              <span>Suporte contínuo</span>
+              <span>Compliance assegurado</span>
             </div>
           </div>
         </div>

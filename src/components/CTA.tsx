@@ -8,13 +8,13 @@ const CTA = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
-            Pronto para Transformar
-            <span className="block text-white/90">Seu Negócio?</span>
+            Proteja Sua Empresa
+            <span className="block text-white/90">Antes do Próximo Ataque</span>
           </h2>
           
           <p className="text-xl md:text-2xl text-white/70 mb-8 max-w-2xl mx-auto text-balance">
-            Agende um diagnóstico gratuito e descubra como podemos acelerar 
-            seus resultados em 90 dias.
+            Agende uma auditoria gratuita e descubra suas vulnerabilidades 
+            antes que hackers as encontrem.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -22,7 +22,7 @@ const CTA = () => {
               size="lg" 
               className="bg-white text-black hover:bg-white/90 text-xl px-12 py-6 h-auto"
             >
-              Diagnóstico gratuito
+              Auditoria gratuita
               <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
           </div>
@@ -30,15 +30,15 @@ const CTA = () => {
           <div className="flex flex-wrap justify-center gap-8 text-white/60">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5" />
-              <span>Sem compromisso</span>
+              <span>Análise completa em 24h</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5" />
-              <span>Análise gratuita completa</span>
+              <span>Relatório detalhado de vulnerabilidades</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5" />
-              <span>Plano de ação personalizado</span>
+              <span>Plano de proteção personalizado</span>
             </div>
           </div>
         </div>
