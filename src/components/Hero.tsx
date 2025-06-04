@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center mb-12">
-            <a href="https://www.instagram.com/ocybernetico_/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ocybernetico/" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
                 className="bg-white text-black hover:bg-white/90 text-lg px-8 py-4 h-auto"

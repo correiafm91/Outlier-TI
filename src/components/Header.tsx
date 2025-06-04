@@ -24,7 +24,7 @@ const Header = () => {
           </a>
         </nav>
 
-        <a href="https://www.instagram.com/ocybernetico_/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/ocybernetico/" target="_blank" rel="noopener noreferrer">
           <Button className="bg-white text-black hover:bg-white/90 font-medium">
             Auditoria gratuita
           </Button>
