@@ -56,7 +56,7 @@ const Services = () => {
               className="bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group"
             >
               <CardHeader className="pb-4">
-                <service.icon className="h-12 w-12 text-white mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <service.icon className="h-12 w-12 text-white mb-4" />
                 <CardTitle className="text-xl text-white">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
