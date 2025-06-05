@@ -1,6 +1,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, BarChart, Bar } from "recharts";
+import { useCountUp } from "@/hooks/useCountUp";
+import { useState, useEffect, useRef } from "react";
 
 const threatData = [
   { month: 'Jan', threats: 450, blocked: 449 },
@@ -17,6 +19,49 @@ const incidentData = [
   { category: 'Ransomware', reduction: 100 },
   { category: 'Intrusão', reduction: 97 },
 ];
+
+const AnimatedNumber = ({ end, suffix = "", decimals = 0 }: { end: number; suffix?: string; decimals?: number }) => {
+  const { count, elementRef } = useCountUp({ end, decimals });
+  
+  return (
+    <div ref={elementRef} className="text-4xl font-bold text-white mb-2">
+      {count}{suffix}
+    </div>
+  );
+};
+
+const AnimatedChart = ({ children }: { children: React.ReactNode }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (chartRef.current) {
+      observer.observe(chartRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div 
+      ref={chartRef} 
+      className={`transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Results = () => {
   return (
@@ -35,21 +80,21 @@ const Results = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">127</div>
+              <AnimatedNumber end={127} />
               <div className="text-white/70">Empresas Protegidas</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">99.8%</div>
+              <AnimatedNumber end={99.8} suffix="%" decimals={1} />
               <div className="text-white/70">Ameaças Bloqueadas</div>
             </CardContent>
           </Card>
           
           <Card className="bg-white/5 border-white/10 text-center">
             <CardContent className="pt-6">
-              <div className="text-4xl font-bold text-white mb-2">0</div>
+              <AnimatedNumber end={0} />
               <div className="text-white/70">Vazamentos de Dados</div>
             </CardContent>
           </Card>
@@ -68,37 +113,39 @@ const Results = () => {
               <CardTitle className="text-white">Ameaças Detectadas vs Bloqueadas</CardTitle>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
-                <AreaChart data={threatData}>
-                  <XAxis 
-                    dataKey="month" 
-                    axisLine={false} 
-                    tickLine={false}
-                    tick={{ fill: '#ffffff', fontSize: 12 }}
-                  />
-                  <YAxis 
-                    axisLine={false} 
-                    tickLine={false}
-                    tick={{ fill: '#ffffff', fontSize: 12 }}
-                  />
-                  <Area 
-                    type="monotone" 
-                    dataKey="threats" 
-                    stackId="1"
-                    stroke="#ff6b6b" 
-                    fill="#ff6b6b"
-                    fillOpacity={0.6}
-                  />
-                  <Area 
-                    type="monotone" 
-                    dataKey="blocked" 
-                    stackId="2"
-                    stroke="#51cf66" 
-                    fill="#51cf66"
-                    fillOpacity={0.8}
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
+              <AnimatedChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <AreaChart data={threatData}>
+                    <XAxis 
+                      dataKey="month" 
+                      axisLine={false} 
+                      tickLine={false}
+                      tick={{ fill: '#ffffff', fontSize: 12 }}
+                    />
+                    <YAxis 
+                      axisLine={false} 
+                      tickLine={false}
+                      tick={{ fill: '#ffffff', fontSize: 12 }}
+                    />
+                    <Area 
+                      type="monotone" 
+                      dataKey="threats" 
+                      stackId="1"
+                      stroke="#ff6b6b" 
+                      fill="#ff6b6b"
+                      fillOpacity={0.6}
+                    />
+                    <Area 
+                      type="monotone" 
+                      dataKey="blocked" 
+                      stackId="2"
+                      stroke="#51cf66" 
+                      fill="#51cf66"
+                      fillOpacity={0.8}
+                    />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </AnimatedChart>
             </CardContent>
           </Card>
 
@@ -107,30 +154,32 @@ const Results = () => {
               <CardTitle className="text-white">Taxa de Proteção por Tipo de Ameaça</CardTitle>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={incidentData} layout="horizontal">
-                  <XAxis 
-                    type="number"
-                    axisLine={false} 
-                    tickLine={false}
-                    tick={{ fill: '#ffffff', fontSize: 12 }}
-                    domain={[0, 100]}
-                  />
-                  <YAxis 
-                    type="category"
-                    dataKey="category"
-                    axisLine={false} 
-                    tickLine={false}
-                    tick={{ fill: '#ffffff', fontSize: 12 }}
-                    width={100}
-                  />
-                  <Bar 
-                    dataKey="reduction" 
-                    fill="#51cf66"
-                    radius={[0, 4, 4, 0]}
-                  />
-                </BarChart>
-              </ResponsiveContainer>
+              <AnimatedChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <BarChart data={incidentData} layout="horizontal">
+                    <XAxis 
+                      type="number"
+                      axisLine={false} 
+                      tickLine={false}
+                      tick={{ fill: '#ffffff', fontSize: 12 }}
+                      domain={[0, 100]}
+                    />
+                    <YAxis 
+                      type="category"
+                      dataKey="category"
+                      axisLine={false} 
+                      tickLine={false}
+                      tick={{ fill: '#ffffff', fontSize: 12 }}
+                      width={100}
+                    />
+                    <Bar 
+                      dataKey="reduction" 
+                      fill="#51cf66"
+                      radius={[0, 4, 4, 0]}
+                    />
+                  </BarChart>
+                </ResponsiveContainer>
+              </AnimatedChart>
             </CardContent>
           </Card>
         </div>
