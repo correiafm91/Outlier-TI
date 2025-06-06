@@ -7,20 +7,20 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                Especialista em
-                <span className="block text-white/90">Cibersegurança</span>
+                Fundador do
+                <span className="block text-white/90">Grupo OPS</span>
               </h2>
               
               <p className="text-xl text-white/70 mb-6 leading-relaxed">
-                Com mais de 5 anos protegendo empresas contra ataques cibernéticos, 
-                ele já blindou centenas de organizações contra ransomware, phishing 
-                e invasões de dados.
+                Como fundador do Grupo OPS, dedico mais de 5 anos da minha carreira 
+                protegendo empresas contra ataques cibernéticos, tendo blindado 
+                centenas de organizações contra ransomware, phishing e invasões de dados.
               </p>
               
               <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                Sua metodologia combina tecnologia de ponta com análise comportamental 
-                para criar camadas de proteção que se adaptam às novas ameaças 
-                em tempo real.
+                Desenvolvi uma metodologia própria que combina tecnologia de ponta 
+                com análise comportamental para criar camadas de proteção que se 
+                adaptam às novas ameaças em tempo real.
               </p>
             </div>
             

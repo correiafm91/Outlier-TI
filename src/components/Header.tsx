@@ -6,7 +6,7 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-xl font-bold text-white">
-          Cibersegurança
+          Grupo OPS
         </div>
         
         <nav className="hidden md:flex space-x-8">
