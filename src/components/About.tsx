@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-24 bg-black">
@@ -12,13 +13,13 @@ const About = () => {
               </h2>
               
               <p className="text-xl text-white/70 mb-6 leading-relaxed">
-                Como fundador do Grupo CCSS, dedico mais de 5 anos da minha carreira 
+                Como fundador do Grupo CCSS, ele dedica mais de 5 anos da sua carreira 
                 protegendo empresas contra ataques cibernéticos, tendo blindado 
                 centenas de organizações contra ransomware, phishing e invasões de dados.
               </p>
               
               <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                Desenvolvi uma metodologia própria que combina tecnologia de ponta 
+                Ele desenvolveu uma metodologia própria que combina tecnologia de ponta 
                 com análise comportamental para criar camadas de proteção que se 
                 adaptam às novas ameaças em tempo real.
               </p>
@@ -43,3 +44,4 @@ const About = () => {
 };
 
 export default About;
+
