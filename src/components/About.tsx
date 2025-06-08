@@ -7,12 +7,12 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                Fundador do
-                <span className="block text-white/90">Grupo OPS</span>
+                Quem estar por trás do
+                <span className="block text-white/90">Grupo CCSS</span>
               </h2>
               
               <p className="text-xl text-white/70 mb-6 leading-relaxed">
-                Como fundador do Grupo OPS, dedico mais de 5 anos da minha carreira 
+                Como fundador do Grupo CCSS, dedico mais de 5 anos da minha carreira 
                 protegendo empresas contra ataques cibernéticos, tendo blindado 
                 centenas de organizações contra ransomware, phishing e invasões de dados.
               </p>
